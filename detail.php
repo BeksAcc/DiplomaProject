@@ -2,6 +2,8 @@
 require "includes/header.php";
 require "includes/db.php";
 
+        $test = "line";
+
 
         $get_phone_info_sql = mysqli_query($connection, "SELECT * FROM smartphone_details WHERE id =" . (int)$_GET['id']);
         $get_phone_sql = mysqli_query($connection, "SELECT * FROM smartphone WHERE id =" . (int)$_GET['id']);
@@ -30,7 +32,6 @@ require "includes/db.php";
                     <div class="row d-flex about_rating">
                         <div style="background: yellow">0.0</div>
                         <div>
-                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
